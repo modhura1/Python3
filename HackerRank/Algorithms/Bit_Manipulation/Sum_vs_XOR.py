@@ -4,6 +4,8 @@ n = int(input())
 print(1 << (n.bit_length() - bin(n).count('1')))
 
 '''
+Explanation :
+
 Totally a mathematical trick.
 just count total numbers of ZERO present in binary number of given n, 
 and answer will be the 2 to the power of (total num of zero).
