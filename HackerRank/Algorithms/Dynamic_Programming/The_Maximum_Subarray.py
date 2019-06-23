@@ -6,9 +6,9 @@ for _ in range(int(input())):
     int(input())
     ip.append(list(map(int, input().split())))
 
-sumSubSeq = 0
-sumSubArr = 0
 for i in range(len(ip)):
+    sumSubSeq = 0
+    sumSubArr = 0
     for j in range(len(ip[i])):
         p = min(ip[i])
         q = max(ip[i])
@@ -22,9 +22,7 @@ for i in range(len(ip)):
                 sumSubArr = sum(ip[i], -p)
                 sumSubSeq = 0
                 for k in range(len(ip[i])):
-                    if ip[i][k] < 0:
-                        continue
-                    else:
+                    if ip[i][k] > 0:
                         sumSubSeq += ip[i][k]     
             else :                                  #if both +ve & -ve elements present and min element is Not present in terminal
                 count = 0
@@ -39,4 +37,4 @@ for i in range(len(ip)):
     print (str(sumSubArr) + " " + str(sumSubSeq))
     
     
-    # 80% solved
+# 80% solved
