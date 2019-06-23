@@ -20,7 +20,6 @@ for i in range(len(ip)):
                 sumSubArr = sumSubSeq = q
             elif pos == 0 or pos == len(ip[i])-1:  #if both +ve & -ve elements present and min element is present in terminal
                 sumSubArr = sum(ip[i], -p)
-                sumSubSeq = 0
                 for k in range(len(ip[i])):
                     if ip[i][k] > 0:
                         sumSubSeq += ip[i][k]     
