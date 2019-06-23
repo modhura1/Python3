@@ -5,7 +5,7 @@ c = list(map(int, input().split()))
 
 dp = [1]+[0]*n
 for i in c:
-    if i > n:                     #if coin > value, there's no reason to use it
+    if i > n:                     #for codition coin > value, skip the value cz there's no reason to use it
         continue
     dp[i] += 1                    #coin by itself as a set
     for j in range(i+1, n+1):     #fill the remaining sets with a new possibility with this coin 
