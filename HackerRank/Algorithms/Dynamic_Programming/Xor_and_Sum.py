@@ -9,3 +9,5 @@ for i in range(314160):
     #a = a ^ b
     res += a ^ (b << i)
 print(res % 1000000007)
+
+#60% solved
