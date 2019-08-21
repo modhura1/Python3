@@ -1,3 +1,5 @@
+##Solution is in filename baseR.py
+
 Iterate Base
 Problem Description
 Given a number representation, we can identify the base that would result in a least value for the representation.  Consider the following examples:
