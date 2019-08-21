@@ -1,3 +1,5 @@
+##Solution is in filename baseR.py
+
 Iterate Base
 Problem Description
 Given a number representation, we can identify the base that would result in a least value for the representation.  Consider the following examples:
@@ -72,3 +74,4 @@ Output
 Explanation
 
 Starting with TCS, TCS -> base 30 => 29*30^2+12*30+28=26488 -> base 9 => 2*9^4+6*9^3+4*9^2+8*9+8=17900 -> base 10 => 17900, which is the fixed point
+
