@@ -1,0 +1,35 @@
+#https://www.hackerrank.com/challenges/recursive-digit-sum/problem
+
+
+
+
+n, k = map(int, input().split())
+p = 0
+
+def cal (n,k):
+    global p
+    a = n
+    if (k==0):
+        return 0
+    else:
+        while(a!=0):
+            p = p + a%10
+            a = a/10
+        return p + cal(n,k-1)
+
+
+out = cal (n,k)
+
+
+
+'''
+for i in range(k):
+    a = n
+    while (a!=0):
+        p += a%10
+        a /= 10 
+'''
+print(n)
+print(k)
+print(p)
+print(out)
