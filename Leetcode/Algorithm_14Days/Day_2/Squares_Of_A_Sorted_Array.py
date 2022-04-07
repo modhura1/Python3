@@ -4,12 +4,10 @@
 
 class Solution:
     def sortedSquares(self, nums: List[int]) -> List[int]:
-        res=[]
-        for i in nums:
-            res.append(i*i)
-        res.sort()
-        return res
+        for i,n in enumerate(nums):
+            nums[i]=n*n
+        return sorted(nums)
       
 """ Efficiency:
-  Runtime: 364 ms, faster than 32.24% of Python3 online submissions for Squares of a Sorted Array.
-  Memory Usage: 16.3 MB, less than 53.29% of Python3 online submissions for Squares of a Sorted Array. """
+  Runtime: 224 ms, faster than 92.39% of Python3 online submissions for Squares of a Sorted Array.
+  Memory Usage: 15.8 MB, less than 90.23% of Python3 online submissions for Squares of a Sorted Array. """
