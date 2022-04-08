@@ -17,7 +17,7 @@ class Solution:
         return [l+1,h+1]
             
 """ Efficiency:
-  Runtime: 176 ms, faster than 52.97% of Python3 online submissions for Two Sum II - Input Array Is Sorted.
+  Runtime: 168 ms, faster than 58.51% of Python3 online submissions for Two Sum II - Input Array Is Sorted.
   Memory Usage: 15 MB, less than 12.96% of Python3 online submissions for Two Sum II - Input Array Is Sorted."""
 
 
