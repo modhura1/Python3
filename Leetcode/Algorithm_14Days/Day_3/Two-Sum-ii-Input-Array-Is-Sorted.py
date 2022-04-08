@@ -5,6 +5,26 @@
 
 class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
+        l,h=0,len(numbers)-1
+        while l<h:
+            s = numbers[l]+numbers[h]
+            if s<target:
+                l+=1
+            elif s > target:
+                h-=1
+            else:
+                return [l+1,h+1]                 
+        return [l+1,h+1]
+            
+""" Efficiency:
+  Runtime: 176 ms, faster than 52.97% of Python3 online submissions for Two Sum II - Input Array Is Sorted.
+  Memory Usage: 15 MB, less than 12.96% of Python3 online submissions for Two Sum II - Input Array Is Sorted."""
+
+
+#------------------------------------Approach 2----------------------------------------------------------
+
+class Solution:
+    def twoSum(self, numbers: List[int], target: int) -> List[int]:
         res=[0,0]
         a=b=c=0
         for i in numbers:
@@ -24,7 +44,7 @@ class Solution:
   Memory Usage: 15 MB, less than 12.96% of Python3 online submissions for Two Sum II - Input Array Is Sorted."""
 
 
-#--------------------------------------Another Approach-------------------------
+#--------------------------------------Approach 3------------------------------
 
 class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
