@@ -1,4 +1,6 @@
 #problem : https://leetcode.com/problems/number-of-1-bits/
+#problem code: 191
+#difficulty: Easy
 
 
 class Solution:
@@ -13,6 +15,7 @@ class Solution:
       
       
 """
+Efficiency:
   Runtime: 25 ms, faster than 96.83% of Python3 online submissions for Number of 1 Bits.
   Memory Usage: 13.7 MB, less than 95.45% of Python3 online submissions for Number of 1 Bits.
 """
