@@ -3,6 +3,7 @@
 #difficulty: Easy
 
 
+#----------------------------------Iterative------------------------------------------
 
 # Definition for singly-linked list.
 # class ListNode:
@@ -31,6 +32,8 @@ Efficiency:
 
 
 
+#----------------------------------Using Stack------------------------------------------
+
 
 # Definition for singly-linked list.
 # class ListNode:
@@ -40,6 +43,8 @@ Efficiency:
 class Solution:
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
         if head==None or head.next==None:
+            return head
+        else:
             stack=deque()
             p=head
             while p!=None:
@@ -48,4 +53,12 @@ class Solution:
             p=head=stack.pop()
             while stack:
                 p.next=stack.pop()
+                p=p.next
+            p.next=None
         return head
+
+"""
+Efficiency:    
+    Runtime: 24 ms, faster than 99.88% of Python3 online submissions for Reverse Linked List.
+    Memory Usage: 15.6 MB, less than 28.62% of Python3 online submissions for Reverse Linked List.
+"""
