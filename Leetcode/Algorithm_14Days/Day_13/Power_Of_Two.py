@@ -35,3 +35,16 @@ Efficiency:
     Runtime: 33 ms, faster than 84.78% of Python3 online submissions for Power of Two.
     Memory Usage: 13.8 MB, less than 95.82% of Python3 online submissions for Power of Two.
 """    
+
+
+#------------------------------------Approach 3----------------------------------------------------------
+class Solution:
+    def isPowerOfTwo(self, n: int) -> bool:
+        while n>1:
+            n=n/2
+        return n==1
+"""
+Efficiency:
+    Runtime: 25 ms, faster than 97.68% of Python3 online submissions for Power of Two.
+    Memory Usage: 13.8 MB, less than 95.82% of Python3 online submissions for Power of Two.
+"""
