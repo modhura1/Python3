@@ -54,3 +54,24 @@ Efficiency:
     Runtime: 152 ms, faster than 72.63% of Python3 online submissions for Single Number.
     Memory Usage: 16.7 MB, less than 53.84% of Python3 online submissions for Single Number.
 """
+
+
+
+#---------------------------------Approach 4---------------------------------------
+
+class Solution:
+    def singleNumber(self, nums: List[int]) -> int:
+        i=0
+        while i<len(nums):
+            res=nums.pop(i)
+            if res in nums:
+                nums.remove(res)
+                i=0
+            else:
+                return res
+
+"""
+Efficiency:
+    Runtime: 2369 ms, faster than 10.64% of Python3 online submissions for Single Number.
+    Memory Usage: 15.9 MB, less than 99.79% of Python3 online submissions for Single Number.
+"""
