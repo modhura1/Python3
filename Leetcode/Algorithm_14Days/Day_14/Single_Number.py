@@ -21,7 +21,7 @@ Efficiency:
 
 
 
-#---------------------------------Another Approach---------------------------------------
+#---------------------------------Efficient Approach---------------------------------------
 
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
@@ -34,6 +34,6 @@ class Solution:
         return sum(nums)
 """
 Efficiency:
-  Runtime: 215 ms, faster than 37.44% of Python3 online submissions for Single Number.
+    Runtime: 198 ms, faster than 45.12% of Python3 online submissions for Single Number.
     Memory Usage: 16.1 MB, less than 99.09% of Python3 online submissions for Single Number.
 """
